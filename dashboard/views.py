@@ -42,9 +42,9 @@ class NotesDetailView(generic.DetailView):
     
     
 @login_required   
-def homework(request):
+def dsa(request):
     if(request.method == "POST"):
-        form=HomeworkForm(request.POST)
+        form=DSAForm(request.POST)
         if form.is_valid():
             try:
                 finished = request.POST['is_finished']
@@ -54,26 +54,26 @@ def homework(request):
                     finished = False
             except:
                 finished = False
-            homeworks = Homework(
+            dsa = DSA(
                 user = request.user,
-                subject = request.POST['subject'],
+                topic = request.POST['subject'],
                 title = request.POST['title'],
                 description = request.POST['description'],
-                due = request.POST['due'],
+                soltuion = request.POST['solution'],
                 is_finished = finished
             )
-            homeworks.save()
-            messages.success(request,f'Homework Added from {request.user.username}!!')
+            dsa.save()
+            messages.success(request,f'DSA Question Added from {request.user.username}!!')
     else:
-        form = HomeworkForm()
+        form = DSAForm()
             
-    HomeWork = Homework.objects.filter(user = request.user)
-    if len(HomeWork) == 0:
-        homework_done = True
+    dsa_Q = dsa.objects.filter(user = request.user)
+    if len(dsa_Q) == 0:
+        question_done = True
     else:
-        homework_done = False
-    context = {'homeworks':HomeWork,'homeworks_done':homework_done, 'form':form,}
-    return render(request,'dashboard/homework.html',context )
+        question_done = False
+    context = {'homeworks':dsa_Q,'question_done':question_done, 'form':form,}
+    return render(request,'dashboard/dsa.html',context )
 
 
 #not working properly
