@@ -9,7 +9,14 @@
 
 ## Youtube
 
+<img width="1433" alt="Screenshot 2022-08-08 at 9 19 59 AM" src="https://user-images.githubusercontent.com/76690746/183337143-0b37aecf-6b44-466d-b2b6-12922d667f8e.png">
 
 ## Wiki
+<img width="1433" alt="Screenshot 2022-08-08 at 9 23 22 AM" src="https://user-images.githubusercontent.com/76690746/183337210-2a2479d2-3c3b-4d27-8aac-a18a4b7fac5f.png">
 
 ## Books
+<img width="1433" alt="Screenshot 2022-08-08 at 9 23 54 AM" src="https://user-images.githubusercontent.com/76690746/183337236-4b705186-be3c-4ff8-bd4a-f32a2bbaaf3d.png">
+
+
+
+
