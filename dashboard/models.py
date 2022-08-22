@@ -1,6 +1,3 @@
-import imp
-from pickle import FALSE
-from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth.models import User
 
